@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... (previous styles remain unchanged) */
+
+/* Add these new styles for the bubble options */
+.option-bubble {
+  @apply inline-block bg-gray-200 rounded-full px-4 py-2 m-1 text-sm text-gray-700 cursor-pointer transition-colors;
+}
+
+.option-bubble:hover {
+  @apply bg-gray-300;
+}
+
+.option-bubble.selected {
+  @apply bg-blue-500 text-white font-bold;
+}
+
+/* ... (rest of the styles remain unchanged) */
+
